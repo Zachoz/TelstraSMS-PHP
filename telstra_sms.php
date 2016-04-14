@@ -12,7 +12,7 @@ class TelstraSMS
         $this->recipient = $recipient;
         $this->message = $message;
 
-        $this->message = str_replace(" ", "", $recipient); // Replace space characters
+        $this->message = str_replace(" ", "", $message); // Replace space characters
     }
 
     public function send()
